@@ -43,6 +43,9 @@ tmux split-window -dh       -- sh -ic 'sleep 5s && echo wallet_03 && ./monero-wa
 #cd ~/onion-monero-blockchain-explorer/build 
 #tmux new-window -n explorer -- sh -ic "echo xmrblocks && ./xmrblocks -t -p 9999 -b $HOME/testnet/node_01/testnet/lmdb/ --no-blocks-on-index 50 --enable-as-hex --enable-pusher || read WHATEVER"
 
+#cp -rf ~/onion-monero-blockchain-explorer/src/templates ./
+#./xmrblocks -t -p 9999 -b ./testnet/node_01/testnet/lmdb/ --no-blocks-on-index 50 --enable-as-hex --enable-pusher
+
 #tmux split-window -v
 #tmux select-pane -t 0
 
